@@ -17,5 +17,5 @@ public:
 
 protected:
 	Function* ptr;
-	double step = 0.0001;
+	double step;
 };

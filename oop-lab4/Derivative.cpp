@@ -1,8 +1,8 @@
 #include "Derivative.h"
 
-Derivative::Derivative() : Function(), ptr(nullptr) {}
+Derivative::Derivative() : Function(), ptr(nullptr), step(0.0001) {}
 
-Derivative::Derivative(Function* ptr) : Function(), ptr(ptr) {}
+Derivative::Derivative(Function* ptr) : Function(), ptr(ptr), step(0.0001) {}
 
 Derivative::~Derivative() {}
 
