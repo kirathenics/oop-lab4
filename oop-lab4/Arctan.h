@@ -9,7 +9,7 @@ public:
 	~Arctan() override;
 
 	double operator() (double value) override;
-	virtual Function* clone() const override;
+	Function* clone() const override;
 	bool operator== (const Arctan& object);
 	bool operator!= (const Arctan& object);
 	Arctan& operator= (const Arctan& object);

@@ -10,7 +10,7 @@ public:
 	~Derivative() override;
 
 	double operator() (double value) override;
-	virtual Function* clone() const override;
+	Function* clone() const override;
 	bool operator== (const Derivative& object);
 	bool operator!= (const Derivative& object);
 	Derivative& operator= (const Derivative& object);

@@ -11,7 +11,7 @@ public:
 	~Arccot() override;
 
 	double operator() (double value) override;
-	virtual Function* clone() const override;
+	Function* clone() const override;
 	bool operator== (const Arccot& object);
 	bool operator!= (const Arccot& object);
 	Arccot& operator= (const Arccot& object);
