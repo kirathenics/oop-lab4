@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Arccot.cpp" />
     <ClCompile Include="Arctan.cpp" />
+    <ClCompile Include="Collection.cpp" />
     <ClCompile Include="Derivative.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
