@@ -131,6 +131,7 @@
     <ClCompile Include="Arctan.cpp" />
     <ClCompile Include="Collection.cpp" />
     <ClCompile Include="Derivative.cpp" />
+    <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

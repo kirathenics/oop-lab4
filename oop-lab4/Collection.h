@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Function.h"
+#include "Iterator.h"
 
 class Collection
 {
@@ -17,8 +18,8 @@ public:
 	void insert(const Function* object, int index);
 	void truncation(int index);
 	void erase(int index);
-	//Iterator begin();
-	//Iterator end();
+	Iterator begin();
+	Iterator end();
 
 private:
 	Function** ptr;

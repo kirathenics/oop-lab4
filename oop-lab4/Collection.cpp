@@ -121,3 +121,13 @@ void Collection::erase(int index)
 	--this->size;
 	return;
 }
+
+Iterator Collection::begin()
+{
+	return Iterator(this->ptr);
+}
+
+Iterator Collection::end()
+{
+	return Iterator(this->ptr + this->size);
+}
