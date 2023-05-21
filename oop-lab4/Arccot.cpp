@@ -1,8 +1,5 @@
 #include "Arccot.h"
 
-#define _USE_MATH_DEFINES
-#include <cmath>
-
 Arccot::Arccot() : Function() {}
 
 Arccot::~Arccot() {}
@@ -20,7 +17,7 @@ Function* Arccot::clone() const
 
 bool Arccot::operator==(const Arccot& object)
 {
-	return this->lastValue == object.lastValue;
+	return fabs(this->lastValue - object.lastValue) < numeric_limits<double>::epsilon();
 }
 
 bool Arccot::operator!=(const Arccot& object)

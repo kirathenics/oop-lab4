@@ -17,7 +17,7 @@ Function* Arctan::clone() const
 
 bool Arctan::operator==(const Arctan& object)
 {
-	return this->lastValue == object.lastValue;
+	return fabs(this->lastValue - object.lastValue) < numeric_limits<double>::epsilon();
 }
 
 bool Arctan::operator!=(const Arctan& object)

@@ -12,7 +12,6 @@ double Derivative::operator()(double value)
 	return this->lastValue;
 }
 
-
 Function* Derivative::clone() const
 {
 	return new Derivative(*this);
@@ -20,7 +19,7 @@ Function* Derivative::clone() const
 
 bool Derivative::operator==(const Derivative& object)
 {
-	return this->lastValue = object.lastValue;
+	return fabs(this->lastValue - object.lastValue) < numeric_limits<double>::epsilon();
 }
 
 bool Derivative::operator!=(const Derivative& object)

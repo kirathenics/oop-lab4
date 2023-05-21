@@ -3,8 +3,6 @@
 #pragma once
 
 #include "Function.h"
-#define _USE_MATH_DEFINES
-#include <math.h>
 
 class Arccot : public Function
 {

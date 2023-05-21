@@ -38,7 +38,7 @@ int Collection::getSize()
 
 Function*& Collection::operator[](int index)
 {
-	if (index < 0 || index >= size) throw("Выход за пределы массива!");
+	if (index < 0 || index >= size) throw exception("Выход за пределы массива!");
 	return ptr[index];
 }
 
@@ -75,7 +75,7 @@ void Collection::pushBack(const Function* object)
 
 void Collection::insert(const Function* object, int index)
 {
-	if (index < 0 || index >= size) throw("Выход за пределы массива!");
+	if (index < 0 || index >= size) throw exception("Выход за пределы массива!");
 
 	Function** newPtr = new Function * [this->size + 1];
 	for (int i = 0; i < index; i++)
@@ -94,7 +94,7 @@ void Collection::insert(const Function* object, int index)
 
 void Collection::truncation(int index)
 {
-	if (index < 0 || index >= size) throw("Выход за пределы массива!");
+	if (index < 0 || index >= size) throw exception("Выход за пределы массива!");
 
 	for (int i = index; i < this->size; i++)
 	{
@@ -106,7 +106,7 @@ void Collection::truncation(int index)
 
 void Collection::erase(int index)
 {
-	if (index < 0 || index >= size) throw("Выход за пределы массива!");
+	if (index < 0 || index >= size) throw exception("Выход за пределы массива!");
 
 	Function** newPtr = new Function * [this->size - 1];
 	for (int i = 0; i < index; i++)
